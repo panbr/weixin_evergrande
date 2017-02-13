@@ -1,0 +1,28 @@
+<!--match.wxml-->
+<scroll-view scroll-x="true" class="header">
+	<view class="nav">
+		<view class="{{poiType === 'match' ? 'selected' : ''}}" data-type="match" bindtap="changePOIType">赛程</view>
+		<view class="{{poiType === 'jifen' ? 'selected' : ''}}" data-type="jifen" bindtap="changePOIType">积分榜</view>
+	</view>
+</scroll-view>
+<view scroll-y="true" class="list">
+	<view class="table">
+	    <view class="tr">
+	        <view class="th">轮次</view>
+	        <view class="th">日期</view>
+	        <view class="th">时间</view>
+	        <view class="th">主队</view>
+	        <view class="th">比分</view>
+	        <view class="th">客队</view>
+	    </view>
+	    <view class="tr" wx:for="{{list}}" wx:for-item="item" wx:key="item.turn">
+	        <view class="td">{{index + 1}}</view>
+	        <view class="td">{{item.date}}</view>
+	        <view class="td">{{item.tee_time}}</view>
+	        <view class="td">{{item.host_team}}</view>
+	        <view class="td">{{item.score}}</view>
+	        <view class="td">{{item.guest_team}}</view>
+	    </view>
+	</view>
+</view>
+

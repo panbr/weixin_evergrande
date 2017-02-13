@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/match/match"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#4abdcc",
+    "navigationBarTitleText": "广州恒大",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#b0b0b0",
+    "selectedColor": "#4abdcc",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/explore_normal.png",
+      "selectedIconPath": "images/explore_pressed.png",
+      "text": "赛事"
+    }, {
+      "pagePath": "pages/match/match",
+      "iconPath": "images/index_normal.png",
+      "selectedIconPath": "images/index_pressed.png",
+      "text": "赛程"
+    }]
+  },
+  "debug": true
+}

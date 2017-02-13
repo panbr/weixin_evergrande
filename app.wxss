@@ -1,0 +1,15 @@
+page {
+  font: 14px "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, STHeiti;
+  line-height: 1.5;
+  background-color: #f6f6f6;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  overflow: hidden;
+  height: 0; 
+  display: block; 
+}
+container {
+  padding: 0 10rpx;
+}

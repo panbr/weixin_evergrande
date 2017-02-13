@@ -1,0 +1,24 @@
+<!--index.wxml-->  
+<view class="banner">
+	<image class="cover" src="http://p1.bqimg.com/575157/4977ea35d5f2ee07.jpg" mode="aspectFill"></image>
+	<view class="info">
+		<text class="h2">【{{match[0].team}}】{{match[1].team}} VS {{match[2].team}}</text>
+        <view class="detail">
+        	<view>{{meta.time}}</view>
+	        <view>{{meta.field}}</view>
+	        <view>{{meta.live}}</view>
+	    </view>
+	</view>
+</view>
+<view scroll-y="true" class="news">
+	<view class="h2">
+		<image src="../../images/divide_l.png"></image>
+		<text>球队新闻</text>
+		<image src="../../images/divide_r.png"></image>
+	</view>
+	<view class="">
+		<view wx:for="{{newsList}}" wx:key="item.time">
+			<navigator url="item.newsUrl" hover-class="navigator-hover">{{item.title}}</navigator>
+		</view>
+	</view>
+</view>
