@@ -16,9 +16,9 @@
 		<text>球队新闻</text>
 		<image src="../../images/divide_r.png"></image>
 	</view>
-	<view class="">
-		<view wx:for="{{newsList}}" wx:key="item.time">
-			<navigator url="item.newsUrl" hover-class="navigator-hover">{{item.title}}</navigator>
+	<view class="news-list">
+		<view wx:for="{{newsList}}" wx:key="item.time" class="news-item">
+			<navigator url="item.newsUrl" hover-class="navigator-hover">{{item.time}} | {{item.title}}</navigator>
 		</view>
 	</view>
 </view>
